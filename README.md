@@ -3,7 +3,7 @@ Spring Aplication, Docker and Kubernetes
 ### Project description
 🚀 This project aims to create an application with microservices architecture using Spring for all development. For virtualization, Docker is used to support our database allocation and create application containers. To orchestrate our container, Kubernetes is used with Minikube that provides us with all the context of a container cluster to receive our application and its surroundings.
 
-## Installation and  Technologies##
+## Installation and  Technologies
 
 The following technologies were used to carry out the project and it is necessary to install some items:
 - Docker
