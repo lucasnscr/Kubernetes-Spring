@@ -13,10 +13,12 @@ spec:
     metadata:
       labels:
         app: user-api
+      annotations:
+        sidecar.istio.io/inject: "true"
     spec:
       containers:
         - name: user-api
-          image: loja/user-api:latest
+          image: lucasnscr/user-api:0.0.1
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
@@ -36,3 +38,4 @@ spec:
                 configMapKeyRef:
                   name: postgres-configmap
                   key: database_password
+

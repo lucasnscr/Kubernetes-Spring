@@ -9,5 +9,6 @@ spec:
     - port: 8081
       targetPort: 8081
       protocol: TCP
+  type: NodePort
   selector:
     app: product-api

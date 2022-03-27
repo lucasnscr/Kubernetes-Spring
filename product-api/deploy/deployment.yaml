@@ -13,10 +13,12 @@ spec:
     metadata:
       labels:
         app: product-api
+      annotations:
+        sidecar.istio.io/inject: "true"
     spec:
       containers:
         - name: product-api
-          image: loja/product-api:latest
+          image: lucasnscr/product-api:0.0.1
           imagePullPolicy: Never
           ports:
             - containerPort: 8081

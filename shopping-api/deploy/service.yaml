@@ -9,5 +9,6 @@ spec:
     - port: 8082
       targetPort: 8082
       protocol: TCP
+  type: NodePort
   selector:
     app: shopping-api
